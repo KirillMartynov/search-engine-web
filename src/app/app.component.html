@@ -1,0 +1,46 @@
+
+<!--<md-sidenav-container>-->
+
+<div class="container">
+  <h1>
+    Welcome to my shiny search web application!
+  </h1>
+</div>
+<div class="search-panel">
+  <div class="full-width">
+    <md-input-container md-placeholder="I'm searching for..."
+                        floatPlaceholder="always"
+                        class="full-width">
+      <input mdInput
+             [(ngModel)]="query"
+             (keypress)="onQueryChanged($event)"
+             placeholder="I'm searching for...">
+    </md-input-container>
+  </div>
+
+</div>
+<div class="container">
+
+  <span class="count-bar" *ngIf="showCount">Found: {{results.length}} item(s)</span>
+
+  <md-progress-spinner *ngIf="operationInProgress" mode="indeterminate">
+  </md-progress-spinner>
+
+  <div class="card" *ngFor="let result of results">
+    <md-card>
+      <md-card-header>
+        <md-card-title><b>{{result.name}}</b></md-card-title>
+        <md-card-subtitle><i>Type: {{result.type}}</i></md-card-subtitle>
+      </md-card-header>
+      <md-card-content>
+        <p class="article">
+          Designed by: {{result.designedBy}}
+        </p>
+      </md-card-content>
+    </md-card>
+  </div>
+
+
+</div>
+
+<!--</md-sidenav-container>-->
