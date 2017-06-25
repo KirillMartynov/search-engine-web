@@ -5,7 +5,7 @@ You need to have installed Node.js and npm if they are not already installed.
 
 # Configuring REST service.
 This application uses another server where backend logic is implemented ("search-engine" project)
-To make the it work you need to configure proxy.config.json file 
+To make it work you need to configure proxy.config.json file 
 and change target property to point it to real server.
 The default property is "target":"http://localhost:8093"
 That means that REST service with backend logic runs at localhost at port 8093.
