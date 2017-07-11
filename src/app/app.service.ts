@@ -1,6 +1,7 @@
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { SearchModel } from './search.model';
+import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
