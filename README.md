@@ -1,7 +1,8 @@
 Installation steps.
 
 # Prerequisites.
-You need to have installed Node.js and npm if they are not already installed.
+You need to have installed Node.js v6.x. and npm v3.x if they are not already installed.
+
 
 # Configuring REST service.
 This application uses another server where backend logic is implemented ("search-engine" project)
